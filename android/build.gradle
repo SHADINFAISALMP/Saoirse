@@ -16,14 +16,19 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
 buildscript {
-    ext.kotlin_version = '1.9.0' // Update Kotlin version
+    ext.kotlin_version = '2.1.0' // Update Kotlin version
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0"
+        classpath 'com.google.gms:google-services:4.4.0'
+        classpath 'com.android.tools.build:gradle:8.6.0'
+        // START: FlutterFire Configuration
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 

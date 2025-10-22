@@ -1,12 +1,12 @@
 import 'package:epi/firebase_options.dart';
-import 'package:epi/splashScreen.dart';
+import 'package:epi/application/presentation/screens/login/splashScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:in_app_update/in_app_update.dart';
 
-import 'locator/app_db.dart';
-import 'locator/locator.dart';
+import 'application/presentation/utils/locator/app_db.dart';
+import 'application/presentation/utils/locator/locator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
